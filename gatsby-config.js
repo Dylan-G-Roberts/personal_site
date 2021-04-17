@@ -6,7 +6,9 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: 'Dylan Roberts',
+    siteTitleAlt: `Dylan Roberts - Software Engineer`,
+    siteUrl: "https://dylanroberts.dev/",
   },
   plugins: [
     {
@@ -15,22 +17,22 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
-          },
-          {
             title: `About`,
             slug: `/about`,
+          },
+          {
+            title: `Blog`,
+            slug: `/blog`,
           },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Github`,
+            url: `https://github.com/Dylan-G-Roberts`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/dylangroberts/`,
           },
         ],
       },
@@ -45,9 +47,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Dylan Roberts`,
+        short_name: `Dylan Roberts`,
+        description: `Personal site for Dylan Roberts`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
